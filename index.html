@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Car Parking Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🚗 Car Parking Management System</h1>
+
+  <!-- Dashboard -->
+  <section class="dashboard">
+    <div class="card">
+      <h3>Total Slots</h3>
+      <p id="totalSlots">-</p>
+    </div>
+    <div class="card">
+      <h3>Available</h3>
+      <p id="availableSlots">-</p>
+    </div>
+    <div class="card">
+      <h3>Occupied</h3>
+      <p id="occupiedSlots">-</p>
+    </div>
+  </section>
+
+  <!-- Entry / Exit Forms -->
+  <section class="forms">
+    <div class="form-box">
+      <h2>Vehicle Entry</h2>
+      <form id="entryForm">
+        <input type="text" id="ownerName" placeholder="Owner Name" required>
+        <input type="text" id="vehicleNumber" placeholder="Vehicle Number" required>
+        <select id="vehicleType" required>
+          <option value="">Select Type</option>
+          <option value="Car">Car</option>
+          <option value="Bike">Bike</option>
+        </select>
+        <button type="submit">Park Vehicle</button>
+      </form>
+      <p id="entryMessage" class="message"></p>
+    </div>
+
+    <div class="form-box">
+      <h2>Vehicle Exit</h2>
+      <form id="exitForm">
+        <input type="text" id="exitVehicleNumber" placeholder="Vehicle Number" required>
+        <button type="submit">Exit Vehicle</button>
+      </form>
+      <p id="exitMessage" class="message"></p>
+    </div>
+  </section>
+
+  <!-- Vehicle List -->
+  <section class="vehicle-list">
+    <h2>Parked Vehicles</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Slot</th>
+          <th>Owner</th>
+          <th>Vehicle Number</th>
+          <th>Type</th>
+          <th>Entry Time</th>
+        </tr>
+      </thead>
+      <tbody id="vehicleTableBody">
+        <!-- Filled by script.js -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

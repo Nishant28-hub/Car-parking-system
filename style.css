@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+  color: #1a3c5e;
+}
+
+/* Dashboard */
+.dashboard {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px 30px;
+  text-align: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  min-width: 140px;
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.card p {
+  margin: 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #1a3c5e;
+}
+
+/* Forms */
+.forms {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.form-box {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  flex: 1;
+  min-width: 280px;
+  max-width: 400px;
+}
+
+.form-box h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #1a3c5e;
+}
+
+.form-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #1a3c5e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #14314c;
+}
+
+.message {
+  min-height: 18px;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.message.success {
+  color: green;
+}
+
+.message.error {
+  color: red;
+}
+
+/* Vehicle list */
+.vehicle-list {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.vehicle-list h2 {
+  margin-top: 0;
+  color: #1a3c5e;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+th {
+  background: #f0f2f5;
+  color: #444;
+}
